@@ -92,17 +92,14 @@
                                     <!-- product -->
                                     <div class="product">
                                         <div class="product-img">
-                                            <img src="{{ asset('frontend//img/product01.png') }}" alt="">
-                                            <div class="product-label">
-                                                <span class="sale">-30%</span>
-                                                <span class="new">NEW</span>
-                                            </div>
+                                            <img src="{{ asset('frontend/img/a-6.png') }}" alt="">
                                         </div>
                                         <div class="product-body">
-                                            <p class="product-category">Category</p>
-                                            <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                                            <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
-                                            </h4>
+                                            <h3 class="product-name">
+                                                <a href="#">Logitech BRIO Ultra 4K Webcam Video
+                                                    Conferencing</a>
+                                            </h3>
+                                            <h4 class="product-price">$15.00 </h4>
                                             <div class="product-rating">
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
@@ -116,12 +113,22 @@
                                                 <button class="add-to-compare"><i class="fa fa-exchange"></i><span
                                                         class="tooltipp">add to compare</span></button>
                                                 <button class="quick-view"><i class="fa fa-eye"></i><span
-                                                        class="tooltipp">quick view</span></button>
+                                                        class="tooltipp">quick
+                                                        view</span></button>
                                             </div>
                                         </div>
                                         <div class="add-to-cart">
-                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
-                                                cart</button>
+                                            <form action="{{ route('cart.add') }}" method="POST">
+                                                @csrf
+                                                <input type="hidden" name="product_id" value="16">
+                                                <input type="hidden" name="product_name"
+                                                    value="ORICO UTJ-U3 USB3.0 to Gigabite Ethernet
+                                            Network Adapter ">
+                                                <input type="hidden" name="price" value="10.00">
+                                                <button type="submit" class="add-to-cart-btn"><i
+                                                        class="fa fa-shopping-cart"></i>
+                                                    add to cart</button>
+                                            </form>
                                         </div>
                                     </div>
                                     <!-- /product -->
@@ -129,22 +136,21 @@
                                     <!-- product -->
                                     <div class="product">
                                         <div class="product-img">
-                                            <img src="{{ asset('frontend//img/product02.png') }}" alt="">
-                                            <div class="product-label">
-                                                <span class="new">NEW</span>
-                                            </div>
+                                            <img src="{{ asset('frontend/img/m-3.jpg') }}" alt="">
                                         </div>
                                         <div class="product-body">
-                                            <p class="product-category">Category</p>
-                                            <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                                            <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
+                                            <h3 class="product-name">
+                                                <a href="#">ASUS ROG Strix XG27ACG ( 27" / 2K IPS /
+                                                    180Hz / Type-C / HDR400 / RGB Logo )</a>
+                                            </h3>
+                                            <h4 class="product-price">$150.00 <del class="product-old-price">$950.00</del>
                                             </h4>
                                             <div class="product-rating">
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
-                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star"></i>
                                             </div>
                                             <div class="product-btns">
                                                 <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
@@ -152,12 +158,21 @@
                                                 <button class="add-to-compare"><i class="fa fa-exchange"></i><span
                                                         class="tooltipp">add to compare</span></button>
                                                 <button class="quick-view"><i class="fa fa-eye"></i><span
-                                                        class="tooltipp">quick view</span></button>
+                                                        class="tooltipp">quick
+                                                        view</span></button>
                                             </div>
                                         </div>
                                         <div class="add-to-cart">
-                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
-                                                cart</button>
+                                            <form action="{{ route('cart.add') }}" method="POST">
+                                                @csrf
+                                                <input type="hidden" name="product_id" value="13">
+                                                <input type="hidden" name="product_name"
+                                                    value="ASUS ROG Strix XG27ACG ">
+                                                <input type="hidden" name="price" value="150.00">
+                                                <button type="submit" class="add-to-cart-btn"><i
+                                                        class="fa fa-shopping-cart"></i>
+                                                    add to cart</button>
+                                            </form>
                                         </div>
                                     </div>
                                     <!-- /product -->
@@ -165,17 +180,21 @@
                                     <!-- product -->
                                     <div class="product">
                                         <div class="product-img">
-                                            <img src="{{ asset('frontend//img/product03.png') }}" alt="">
-                                            <div class="product-label">
-                                                <span class="sale">-30%</span>
-                                            </div>
+                                            <img src="{{ asset('frontend/img/m-2.jpg') }}" alt="">
                                         </div>
                                         <div class="product-body">
-                                            <p class="product-category">Category</p>
-                                            <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                                            <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
+                                            <h3 class="product-name">
+                                                <a href="#">AIWA MQ3207-Y ( 32" / 2K QHD ( 2560 x 1440
+                                                    ) / IPS / 60Hz / sRGB %: 100% / 3 Years warranty )</a>
+                                            </h3>
+                                            <h4 class="product-price">$400.00 <del class="product-old-price">$950.00</del>
                                             </h4>
                                             <div class="product-rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
                                             </div>
                                             <div class="product-btns">
                                                 <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
@@ -183,12 +202,20 @@
                                                 <button class="add-to-compare"><i class="fa fa-exchange"></i><span
                                                         class="tooltipp">add to compare</span></button>
                                                 <button class="quick-view"><i class="fa fa-eye"></i><span
-                                                        class="tooltipp">quick view</span></button>
+                                                        class="tooltipp">quick
+                                                        view</span></button>
                                             </div>
                                         </div>
                                         <div class="add-to-cart">
-                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
-                                                cart</button>
+                                            <form action="{{ route('cart.add') }}" method="POST">
+                                                @csrf
+                                                <input type="hidden" name="product_id" value="12">
+                                                <input type="hidden" name="product_name" value="AIWA MQ3207-Y ">
+                                                <input type="hidden" name="price" value="400.00">
+                                                <button type="submit" class="add-to-cart-btn"><i
+                                                        class="fa fa-shopping-cart"></i>
+                                                    add to cart</button>
+                                            </form>
                                         </div>
                                     </div>
                                     <!-- /product -->
@@ -196,12 +223,14 @@
                                     <!-- product -->
                                     <div class="product">
                                         <div class="product-img">
-                                            <img src="{{ asset('frontend//img/product04.png') }}" alt="">
+                                            <img src="{{ asset('frontend/img/rog-2.jpg') }}" alt="">
                                         </div>
                                         <div class="product-body">
-                                            <p class="product-category">Category</p>
-                                            <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                                            <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
+                                            <h3 class="product-name">
+                                                <a href="#">MSI Stealth 16 Mercedes-AMG Motorsport
+                                                    A13VG ( I9 13900H / 32GB / SSD 2TB PCIE / RTX4070 8GB / 16"UHD )</a>
+                                            </h3>
+                                            <h4 class="product-price">$880.00 <del class="product-old-price">$990.00</del>
                                             </h4>
                                             <div class="product-rating">
                                                 <i class="fa fa-star"></i>
@@ -216,12 +245,21 @@
                                                 <button class="add-to-compare"><i class="fa fa-exchange"></i><span
                                                         class="tooltipp">add to compare</span></button>
                                                 <button class="quick-view"><i class="fa fa-eye"></i><span
-                                                        class="tooltipp">quick view</span></button>
+                                                        class="tooltipp">quick
+                                                        view</span></button>
                                             </div>
                                         </div>
                                         <div class="add-to-cart">
-                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
-                                                cart</button>
+                                            <form action="{{ route('cart.add') }}" method="POST">
+                                                @csrf
+                                                <input type="hidden" name="product_id" value="4">
+                                                <input type="hidden" name="product_name"
+                                                    value="MSI Stealth 16 Mercedes-AMG Motorsport
+                                            A13VG">
+                                                <input type="hidden" name="price" value="1290.00">
+                                                <button type="submit" class="add-to-cart-btn"><i
+                                                        class="fa fa-shopping-cart"></i> add to cart</button>
+                                            </form>
                                         </div>
                                     </div>
                                     <!-- /product -->
@@ -229,13 +267,14 @@
                                     <!-- product -->
                                     <div class="product">
                                         <div class="product-img">
-                                            <img src="{{ asset('frontend//img/product05.png') }}" alt="">
+                                            <img src="{{ asset('frontend/img/a-5.jpg') }}" alt="">
                                         </div>
                                         <div class="product-body">
-                                            <p class="product-category">Category</p>
-                                            <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                                            <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
-                                            </h4>
+                                            <h3 class="product-name">
+                                                <a href="#">ORICO UTJ-U3 USB3.0 to Gigabite Ethernet
+                                                    Network Adapter (100/1000)</a>
+                                            </h3>
+                                            <h4 class="product-price">$10.00 </h4>
                                             <div class="product-rating">
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
@@ -249,12 +288,22 @@
                                                 <button class="add-to-compare"><i class="fa fa-exchange"></i><span
                                                         class="tooltipp">add to compare</span></button>
                                                 <button class="quick-view"><i class="fa fa-eye"></i><span
-                                                        class="tooltipp">quick view</span></button>
+                                                        class="tooltipp">quick
+                                                        view</span></button>
                                             </div>
                                         </div>
                                         <div class="add-to-cart">
-                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
-                                                cart</button>
+                                            <form action="{{ route('cart.add') }}" method="POST">
+                                                @csrf
+                                                <input type="hidden" name="product_id" value="15">
+                                                <input type="hidden" name="product_name"
+                                                    value="ORICO UTJ-U3 USB3.0 to Gigabite Ethernet
+                                            Network Adapter ">
+                                                <input type="hidden" name="price" value="10.00">
+                                                <button type="submit" class="add-to-cart-btn"><i
+                                                        class="fa fa-shopping-cart"></i>
+                                                    add to cart</button>
+                                            </form>
                                         </div>
                                     </div>
                                     <!-- /product -->
@@ -352,17 +401,14 @@
                                     <!-- product -->
                                     <div class="product">
                                         <div class="product-img">
-                                            <img src="{{ asset('frontend//img/product06.png') }}" alt="">
-                                            <div class="product-label">
-                                                <span class="sale">-30%</span>
-                                                <span class="new">NEW</span>
-                                            </div>
+                                            <img src="{{ asset('frontend/img/a-6.png') }}" alt="">
                                         </div>
                                         <div class="product-body">
-                                            <p class="product-category">Category</p>
-                                            <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                                            <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
-                                            </h4>
+                                            <h3 class="product-name">
+                                                <a href="#">Logitech BRIO Ultra 4K Webcam Video
+                                                    Conferencing</a>
+                                            </h3>
+                                            <h4 class="product-price">$15.00 </h4>
                                             <div class="product-rating">
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
@@ -376,12 +422,22 @@
                                                 <button class="add-to-compare"><i class="fa fa-exchange"></i><span
                                                         class="tooltipp">add to compare</span></button>
                                                 <button class="quick-view"><i class="fa fa-eye"></i><span
-                                                        class="tooltipp">quick view</span></button>
+                                                        class="tooltipp">quick
+                                                        view</span></button>
                                             </div>
                                         </div>
                                         <div class="add-to-cart">
-                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
-                                                cart</button>
+                                            <form action="{{ route('cart.add') }}" method="POST">
+                                                @csrf
+                                                <input type="hidden" name="product_id" value="16">
+                                                <input type="hidden" name="product_name"
+                                                    value="ORICO UTJ-U3 USB3.0 to Gigabite Ethernet
+                                            Network Adapter ">
+                                                <input type="hidden" name="price" value="10.00">
+                                                <button type="submit" class="add-to-cart-btn"><i
+                                                        class="fa fa-shopping-cart"></i>
+                                                    add to cart</button>
+                                            </form>
                                         </div>
                                     </div>
                                     <!-- /product -->
@@ -389,22 +445,21 @@
                                     <!-- product -->
                                     <div class="product">
                                         <div class="product-img">
-                                            <img src="{{ asset('frontend/img/product07.png') }}" alt="">
-                                            <div class="product-label">
-                                                <span class="new">NEW</span>
-                                            </div>
+                                            <img src="{{ asset('frontend/img/m-3.jpg') }}" alt="">
                                         </div>
                                         <div class="product-body">
-                                            <p class="product-category">Category</p>
-                                            <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                                            <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
+                                            <h3 class="product-name">
+                                                <a href="#">ASUS ROG Strix XG27ACG ( 27" / 2K IPS /
+                                                    180Hz / Type-C / HDR400 / RGB Logo )</a>
+                                            </h3>
+                                            <h4 class="product-price">$150.00 <del class="product-old-price">$950.00</del>
                                             </h4>
                                             <div class="product-rating">
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
-                                                <i class="fa fa-star-o"></i>
+                                                <i class="fa fa-star"></i>
                                             </div>
                                             <div class="product-btns">
                                                 <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
@@ -412,12 +467,21 @@
                                                 <button class="add-to-compare"><i class="fa fa-exchange"></i><span
                                                         class="tooltipp">add to compare</span></button>
                                                 <button class="quick-view"><i class="fa fa-eye"></i><span
-                                                        class="tooltipp">quick view</span></button>
+                                                        class="tooltipp">quick
+                                                        view</span></button>
                                             </div>
                                         </div>
                                         <div class="add-to-cart">
-                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
-                                                cart</button>
+                                            <form action="{{ route('cart.add') }}" method="POST">
+                                                @csrf
+                                                <input type="hidden" name="product_id" value="13">
+                                                <input type="hidden" name="product_name"
+                                                    value="ASUS ROG Strix XG27ACG ">
+                                                <input type="hidden" name="price" value="150.00">
+                                                <button type="submit" class="add-to-cart-btn"><i
+                                                        class="fa fa-shopping-cart"></i>
+                                                    add to cart</button>
+                                            </form>
                                         </div>
                                     </div>
                                     <!-- /product -->
@@ -425,17 +489,21 @@
                                     <!-- product -->
                                     <div class="product">
                                         <div class="product-img">
-                                            <img src="{{ asset('frontend/img/product08.png') }}" alt="">
-                                            <div class="product-label">
-                                                <span class="sale">-30%</span>
-                                            </div>
+                                            <img src="{{ asset('frontend/img/m-2.jpg') }}" alt="">
                                         </div>
                                         <div class="product-body">
-                                            <p class="product-category">Category</p>
-                                            <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                                            <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
+                                            <h3 class="product-name">
+                                                <a href="#">AIWA MQ3207-Y ( 32" / 2K QHD ( 2560 x 1440
+                                                    ) / IPS / 60Hz / sRGB %: 100% / 3 Years warranty )</a>
+                                            </h3>
+                                            <h4 class="product-price">$400.00 <del class="product-old-price">$950.00</del>
                                             </h4>
                                             <div class="product-rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
                                             </div>
                                             <div class="product-btns">
                                                 <button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span
@@ -443,12 +511,20 @@
                                                 <button class="add-to-compare"><i class="fa fa-exchange"></i><span
                                                         class="tooltipp">add to compare</span></button>
                                                 <button class="quick-view"><i class="fa fa-eye"></i><span
-                                                        class="tooltipp">quick view</span></button>
+                                                        class="tooltipp">quick
+                                                        view</span></button>
                                             </div>
                                         </div>
                                         <div class="add-to-cart">
-                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
-                                                cart</button>
+                                            <form action="{{ route('cart.add') }}" method="POST">
+                                                @csrf
+                                                <input type="hidden" name="product_id" value="12">
+                                                <input type="hidden" name="product_name" value="AIWA MQ3207-Y ">
+                                                <input type="hidden" name="price" value="400.00">
+                                                <button type="submit" class="add-to-cart-btn"><i
+                                                        class="fa fa-shopping-cart"></i>
+                                                    add to cart</button>
+                                            </form>
                                         </div>
                                     </div>
                                     <!-- /product -->
@@ -456,12 +532,14 @@
                                     <!-- product -->
                                     <div class="product">
                                         <div class="product-img">
-                                            <img src="{{ asset('frontend/img/product09.png') }}" alt="">
+                                            <img src="{{ asset('frontend/img/rog-2.jpg') }}" alt="">
                                         </div>
                                         <div class="product-body">
-                                            <p class="product-category">Category</p>
-                                            <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                                            <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
+                                            <h3 class="product-name">
+                                                <a href="#">MSI Stealth 16 Mercedes-AMG Motorsport
+                                                    A13VG ( I9 13900H / 32GB / SSD 2TB PCIE / RTX4070 8GB / 16"UHD )</a>
+                                            </h3>
+                                            <h4 class="product-price">$880.00 <del class="product-old-price">$990.00</del>
                                             </h4>
                                             <div class="product-rating">
                                                 <i class="fa fa-star"></i>
@@ -476,12 +554,21 @@
                                                 <button class="add-to-compare"><i class="fa fa-exchange"></i><span
                                                         class="tooltipp">add to compare</span></button>
                                                 <button class="quick-view"><i class="fa fa-eye"></i><span
-                                                        class="tooltipp">quick view</span></button>
+                                                        class="tooltipp">quick
+                                                        view</span></button>
                                             </div>
                                         </div>
                                         <div class="add-to-cart">
-                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
-                                                cart</button>
+                                            <form action="{{ route('cart.add') }}" method="POST">
+                                                @csrf
+                                                <input type="hidden" name="product_id" value="4">
+                                                <input type="hidden" name="product_name"
+                                                    value="MSI Stealth 16 Mercedes-AMG Motorsport
+                                            A13VG">
+                                                <input type="hidden" name="price" value="1290.00">
+                                                <button type="submit" class="add-to-cart-btn"><i
+                                                        class="fa fa-shopping-cart"></i> add to cart</button>
+                                            </form>
                                         </div>
                                     </div>
                                     <!-- /product -->
@@ -489,13 +576,14 @@
                                     <!-- product -->
                                     <div class="product">
                                         <div class="product-img">
-                                            <img src="{{ asset('frontend/img/product01.png') }}" alt="">
+                                            <img src="{{ asset('frontend/img/a-5.jpg') }}" alt="">
                                         </div>
                                         <div class="product-body">
-                                            <p class="product-category">Category</p>
-                                            <h3 class="product-name"><a href="#">product name goes here</a></h3>
-                                            <h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del>
-                                            </h4>
+                                            <h3 class="product-name">
+                                                <a href="#">ORICO UTJ-U3 USB3.0 to Gigabite Ethernet
+                                                    Network Adapter (100/1000)</a>
+                                            </h3>
+                                            <h4 class="product-price">$10.00 </h4>
                                             <div class="product-rating">
                                                 <i class="fa fa-star"></i>
                                                 <i class="fa fa-star"></i>
@@ -509,12 +597,22 @@
                                                 <button class="add-to-compare"><i class="fa fa-exchange"></i><span
                                                         class="tooltipp">add to compare</span></button>
                                                 <button class="quick-view"><i class="fa fa-eye"></i><span
-                                                        class="tooltipp">quick view</span></button>
+                                                        class="tooltipp">quick
+                                                        view</span></button>
                                             </div>
                                         </div>
                                         <div class="add-to-cart">
-                                            <button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> add to
-                                                cart</button>
+                                            <form action="{{ route('cart.add') }}" method="POST">
+                                                @csrf
+                                                <input type="hidden" name="product_id" value="15">
+                                                <input type="hidden" name="product_name"
+                                                    value="ORICO UTJ-U3 USB3.0 to Gigabite Ethernet
+                                            Network Adapter ">
+                                                <input type="hidden" name="price" value="10.00">
+                                                <button type="submit" class="add-to-cart-btn"><i
+                                                        class="fa fa-shopping-cart"></i>
+                                                    add to cart</button>
+                                            </form>
                                         </div>
                                     </div>
                                     <!-- /product -->
